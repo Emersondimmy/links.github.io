@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: "Nata Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  background: #572a2a;
+  background: linear-gradient(112deg, rgba(87, 42, 42, 1) 5%, rgba(253, 29, 29, 1) 71%, rgba(252, 176, 69, 1) 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background: #5c1402;
+  border-radius: 12px;
+  padding: 30px 20px 40px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #510204;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.username {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ff5a5f;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.links a {
+  background: #d1141b;
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.links a:hover,
+.links a:focus {
+  background-color: #e04e53;
+}
+
+@media (max-width: 440px) {
+  body {
+    padding: 15px;
+  }
+  .container {
+    padding: 25px 15px 35px;
+    max-width: 100%;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-width: 2px;
+    margin-bottom: 12px;
+  }
+  .username {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  .links a {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}
